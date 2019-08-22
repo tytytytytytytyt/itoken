@@ -5,3 +5,10 @@ spring:
       name: itoken-eureka
       label: master
       profile: dev
+
+# =========== eureka的配置理论上不会在这里配置 但是在网速不好的地方会有问题，因此在这里配置自己不用注册到配置中心
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+#===============================================
